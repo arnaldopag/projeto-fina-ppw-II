@@ -36,3 +36,23 @@ module.exports.delete = async function (req, res) {
     let resultado = await Noticia.findByIdAndDelete(id);
     res.json(resultado);
 };
+
+if(req.query.id == null){
+    res.statusCode == 500
+    throw new Error("O ID DA NOTICIA NÃO FOI INFORMADO") 
+}
+
+let tamanho = Object.keys(req.body)
+if(tamanho == null){
+    res.statusCode = 404
+    throw new Error("INFORME PELO MENOS UM ATRIBUTO")
+}
+
+let lim = req.query.limite
+if(!lim){
+    res.statusCode = 400
+    throw new Error("É NECESSÁRIO INFORMAR A QUANTIDADE DE NOTICIAS QUE DESEJA LISTAR")
+}
+if(res.json(resultado)== null){     
+    res.statusCode = 202
+}
