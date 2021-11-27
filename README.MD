@@ -2,7 +2,7 @@
 
 Desenvolvido por Arnaldo Paganni / Cristoferson Luiz / Vinicius Mangili
 
-##Link Heroku
+##Link Heroku https://projeto-final-ppw.herokuapp.com/
 NOTICIAS
 -----------------------------
 # BUSCAR TODOS OS OBJETOS
